@@ -12,19 +12,18 @@ Steps:
 
 ## how to use it?
 
-import scat._
-
 Create a simple algebratic structure by providing its type as most of algebraic instances
 are available as implicit values. To make implicit values visible import instaces object of the 
 algebraic strucure. 
 
-Example:
-import scat._
-import MonadInstances._
-val l = Monad[List];
-println(l.flatMap(List(1,2,3))(x=> List(x,x)))
+### Example:
 
->>List(1, 1, 2, 2, 3, 3)
+-  `import scat._`
+-  `import MonadInstances._`
+-  `val l = Monad[List]`
+-  `println(l.flatMap(List(1,2,3))(x=> List(x,x)))`
+
+- `>>List(1, 1, 2, 2, 3, 3)`
 
 ## how to contribute..
 
